@@ -1,0 +1,37 @@
+import java.util.Scanner;
+public class Main {
+	
+	public static void main(String[] args) {
+		Scanner s=new Scanner (System.in);
+		int N=s.nextInt();
+		int C=s.nextInt();
+		int prod=1;
+		int sum=0;
+		for(int i=1;i<=N;i++){
+           if (C==1){
+			
+             sum+=i;
+			 
+		   }
+		   else if(C==2){
+			   prod*=i;
+			   
+
+		   }
+		   else{
+			   System.out.print(-1);
+			   break;
+		   }
+		  
+		}
+		if(C==1){
+         System.out.print(sum);
+		}
+		if(C==2){
+         System.out.print(prod);
+		}
+         
+		 
+		  
+	}
+}
