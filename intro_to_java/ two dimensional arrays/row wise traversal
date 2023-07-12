@@ -1,0 +1,16 @@
+import java.util.Scanner;
+public class Solution {
+    public static int[] printRowWise(int [][]a) {
+		int arr[]=new int[a[0].length*a.length];
+		int count=0;
+		
+		for(int i=0;i<a.length;i++) {
+			for(int j=0;j<a[0].length;j++) {
+				arr[count]=a[i][j];
+				count++;
+			}
+			//System.out.println();
+		}
+		return arr;
+	}
+}
