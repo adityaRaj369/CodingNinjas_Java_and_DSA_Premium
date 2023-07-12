@@ -1,7 +1,0 @@
-public class Solution {
-    public static int calculateASCII(char ch) {
-        int i=ch;
-       
-        return ch;
-    }
-}
