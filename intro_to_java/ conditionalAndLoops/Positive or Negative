@@ -1,0 +1,14 @@
+public class Solution {
+    public static String positiveOrNegative(int number) {
+       
+       
+        if (number<0){
+            System.out.print("Negative");
+        }
+        else{
+            System.out.print("Positive");
+        }
+        return positiveOrNegative(number);
+ 
+    }
+}
