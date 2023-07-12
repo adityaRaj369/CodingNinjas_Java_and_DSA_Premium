@@ -1,0 +1,15 @@
+public class Solution {
+    public static String remarkStudent(int score) {
+        if ((score>75)&&(score<=100)){
+            System.out.print("Distinction");
+        }
+        if((score>50)&&(score<=75)){
+            System.out.print("Average");
+        }
+        if((score>35)&&(score<50)){
+            System.out.print("Below Average");
+        }
+        return remarkStudent(score);
+       
+    }
+}
