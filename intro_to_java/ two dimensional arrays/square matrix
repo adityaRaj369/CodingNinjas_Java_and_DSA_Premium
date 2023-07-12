@@ -1,0 +1,23 @@
+import javafx.util.Pair;
+public class Solution {
+    public static Pair< String, int[] > sqrMat(int [][]mat, int n, int m) {
+        // Write your code here.
+         if (n != m) {
+        return new Pair<>("NO", null);
+    }
+    
+    int[] diagonal = new int[n];
+    
+    for (int i = 0; i < n; i++) {
+        for (int j = 0; j < m; j++) {
+            if (i == j) {
+                diagonal[i] = mat[i][j];
+            }
+        }
+    }
+    
+    return new Pair<>("YES", diagonal);
+       // return arr1;
+    }
+}
+    
