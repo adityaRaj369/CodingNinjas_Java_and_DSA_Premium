@@ -1,0 +1,25 @@
+import java.util.Scanner;
+public class Main {
+	
+	public static void main(String[] args) {
+	Scanner s=new Scanner(System.in);
+		int n=s.nextInt();
+		
+		int i=0;
+		while(i<=n){
+			int sq=0;
+			sq=i*i;
+
+			if(sq==n){
+				System.out.print(i);
+			}
+			else if(sq+1==n){
+				System.out.print(i);
+			}
+		
+			i++;
+			
+			
+		}
+		}
+	}
