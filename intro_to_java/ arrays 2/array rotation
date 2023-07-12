@@ -1,0 +1,16 @@
+public class Solution {
+    public static int[] rotateArray(int []a, int x, String dir) {
+  
+   int N = a.length;
+    int[] B = new int[N];
+    if (dir.equals("LEFT")) {
+        for (int i = 0; i < N; i++) {
+            B[i] = a[(i + x) % N];
+        }
+    } else if (dir.equals("RIGHT")) {
+        for (int i = 0; i < N; i++) {
+            B[i] = a[(N + i - x) % N];
+        }
+    }
+    return B;
+}}
